@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controller/RestaurantController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="e#116#175#0#PHP" expanded="true" />
               </folding>
@@ -184,22 +184,6 @@
               <item name="honger-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="honger-project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="honger-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="honger-project" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="honger-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="honger-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="honger-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="honger-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -235,16 +219,15 @@
       <option name="presentableId" value="Default" />
       <updated>1551885185031</updated>
       <workItem from="1551885190349" duration="408000" />
-      <workItem from="1551885689423" duration="4018000" />
+      <workItem from="1551885689423" duration="4351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4426000" />
+    <option name="totallyTimeSpent" value="4759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1537" height="912" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25319007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -279,10 +262,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RestaurantController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="e#116#175#0#PHP" expanded="true" />
           </folding>
