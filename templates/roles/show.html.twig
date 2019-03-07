@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Rol {{ title }} {% endblock %}
+
+{% block body %}
+
+<h1>{{ title }}</h1>
+
+<div>
+    <p>Cuando yo tenía seis años vi en un libro sobre la selva virgen que se titulaba "Historias vividas",
+        una magnífica lámina. Representaba una serpiente boa que se tragaba a una fiera.</p>
+
+    <p>Mi dibujo no representaba un sombrero. Representaba una serpiente boa que digiere un elefante.
+        Dibujé entonces el interior de la serpiente boa a fin de que las personas mayores pudieran comprender.
+        Siempre estas personas tienen necesidad de explicaciones.</p>
+    <p>Tuve, pues, que elegir otro oficio y aprendía pilotear aviones. He volado un poco por todo el
+        mundo y la geografía, en efecto, me ha servido de mucho; al primer vistazo podía distinguir
+        perfectamente la China de Arizona. Esto es muy útil, sobre todo si se pierde uno durante la noche.</p>
+</div>
+
+
+<h2>Comments ({{ comments|length }})</h2>
+<ul>
+    {% for comment in comments %}
+            <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

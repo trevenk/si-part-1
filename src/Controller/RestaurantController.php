@@ -10,9 +10,10 @@ namespace App\Controller;
 
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
-class RestaurantController
+class RestaurantController extends AbstractController
 {
     /**
      * @Route("/")
@@ -27,9 +28,16 @@ class RestaurantController
      */
     public function show($slug)
     {
-        return new Response(sprintf(
-            'Future page will show the role: %s',
-            $slug
-        ));
+        $comments = [
+            'Cuando el misterio es demasiado impresionante, es imposible desobedecer.',
+            'Por absurdo que aquello me pareciera, a mil millas de distancia de todo lugar habitado y en peligro de muerte, saqué de mi
+bolsillo una hoja de papel y una pluma fuente.',
+            'Recordé que yo había estudiado especialmente geografía, historia, cálculo y gramática y le dije al muchachito 
+            (ya un poco malhumorado), que no sabía dibujar.',
+        ];
+        return $this->render('roles/show.html.twig',[
+            'title' => ucwords(str_replace('_',' ',$slug)),
+            'comments' => $comments,
+    ]);
     }
 }
