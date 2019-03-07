@@ -55,7 +55,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/flex" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
