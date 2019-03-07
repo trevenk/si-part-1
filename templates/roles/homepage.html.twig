@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center">Bienvenido</h1>
+        <ul class="nav justify-content-end">
+            <li><a href="{{ path('app_roles_show') }}">Log In</a> </li>
+            <li>&nbsp;|&nbsp;</li>
+            <li><a href="#">Sign Up</a> </li>
+        </ul>
+        <form method="post">
+            <label>Usuario</label>
+            <input type="text" name="usuario" class="form-control" id="usuario">
+            <label>Contrase&ntilde;a</label>
+            <input type="password" name="pass" class="form-control" id="pass">
+            <br>
+            <input type="submit" class="form-control">
+        </form>
+
+    </div>
+{% endblock %}
