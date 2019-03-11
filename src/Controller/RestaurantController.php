@@ -38,25 +38,110 @@ class RestaurantController extends AbstractController
      */
     public function show($slug)
     {
-        $comments = [
-            'Cuando el misterio es demasiado impresionante, es imposible desobedecer.',
-            'Por absurdo que aquello me pareciera, a mil millas de distancia de todo lugar habitado y en peligro de muerte, saqué de mi
-bolsillo una hoja de papel y una pluma fuente.',
-            'Recordé que yo había estudiado especialmente geografía, historia, cálculo y gramática y le dije al muchachito
-            (ya un poco malhumorado), que no sabía dibujar.',
-        ];
-        return $this->render('roles/show.html.twig',[
-            'title' => ucwords(str_replace('_',' ',$slug)),
-            'slug' => $slug,
-            'comments' => $comments,
-    ]);
+        // Esto iri'ia en el modelo
+        switch ($slug){
+            case 'camarero':
+                $pedidos = [
+                    [
+                        "mesa" => 'Terraza/1',
+                        "estado" => 'Entregado',
+                    ],
+                    [
+                        "mesa" => 'Terraza/5',
+                        "estado" => 'Pendiente',
+                    ],
+                    [
+                        "mesa" => 'Rio/5',
+                        "estado" => 'Pendiente',
+                    ],
+                    [
+                        "mesa" => 'Comedor/5',
+                        "estado" => 'Entregado',
+                    ],
+                    [
+                        "mesa" => 'Piscina/1',
+                        "estado" => 'Entregado',
+                    ],
+                    [
+                        "mesa" => 'Piscina/2',
+                        "estado" => 'Pendiente',
+                    ],
+                    [
+                        "mesa" => 'Rio/4',
+                        "estado" => 'Entregado',
+                    ],
+                    [
+                        "mesa" => 'Terraza/3',
+                        "estado" => 'Entregado',
+                    ],
+                ];
+
+                return $this->render('roles/camarero.html.twig',[
+                    'pedidos' => $pedidos,
+                ]);
+                break;
+
+            case 'cocina':
+                return $this->render('roles/cocina.html.twig');
+                break;
+
+            case 'barra':
+                return $this->render('roles/barra.html.twig');
+                break;
+
+            case 'admin':
+                return $this->render('roles/admin.html.twig');
+                break;
+
+            default:
+                return $this->render('roles/admin.html.twig');
+
+        }
+
+
+
     }
+
+    /**
+     * @Route("/roles/pedidos/new-pedido-mesa", name="app_new_pedido")
+     */
+
+    public function nuevoPedido()
+    {
+        $areas = [
+            [
+                "nombre" => 'rio',
+                "mesas" => 5,
+            ],
+            [
+                "nombre" => 'terraza',
+                "mesas" => 10,
+            ],
+            [
+                "nombre" => 'piscina',
+                "mesas" => 10,
+            ],
+            [
+                "nombre" => 'comedor',
+                "mesas" => 20,
+            ],
+            [
+                "nombre" => 'barra',
+                "mesas" => 10,
+            ],
+        ];
+        return $this->render('roles/pedidos/new-pedido-mesa.html.twig',[
+            'areas' => $areas,
+        ]);
+    }
+
+
 
     /**
      * @Route("/roles/{slug}/heart", name="roles_toggle_heart", methods={"POST"})
      */
 
-    public  function toggleRoleHeart($slug)
+    public function toggleRoleHeart($slug)
     {
         // TODO - actually heart/unheart the article!
 

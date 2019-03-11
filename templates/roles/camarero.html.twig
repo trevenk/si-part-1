@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-right fixed-bottom mr-5 mb-5">
+        <a href="{{ path('app_new_pedido') }}" class="btn btn-info rounded-circle shadow-lg p-4 mb-4"><h2 class="py-0 px-3"><b>+</b></h2></a>
+    </div>
+
+    <h1 class="text-center">Pedidos</h1>
+    <div class="container justify-content-center card-columns">
+
+
+       {% for pedido in pedidos %}
+           <div class="card" style="width: 256px;">
+               <div class="card-body">
+                   {% if pedido['estado']=='Pendiente' %}
+                       <h4 class="card-title text-danger">{{ pedido['mesa'] }}</h4>
+                       <p class="card-text text-danger">{{ pedido['estado'] }}</p>
+                       <a href="#" class="btn btn-danger">Go somewhere</a>
+                   {% else %}
+                       <h4 class="card-title">{{ pedido['mesa'] }}</h4>
+                       <p class="card-text">{{ pedido['estado'] }}</p>
+                       <a href="#" class="btn btn-primary">Go somewhere</a>
+                   {% endif %}
+               </div>
+           </div>
+       {% endfor %}
+
+
+    </div>
+
+
+
+
+
+{% endblock %}

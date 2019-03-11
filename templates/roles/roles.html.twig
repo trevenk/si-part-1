@@ -3,12 +3,12 @@
 {% block title %} Roles {% endblock %}
 
 {% block body %}
-    <div  class="container justify-content-center text-center">
+    <div  class="container justify-content-center text-center mt-5">
 
-        <h1 class="text-center">&Aacute;rea de trabajo</h1>
+        <h1 class="text-center justify-content-center">&Aacute;rea de trabajo</h1>
+        <br>
         <a href="{{ path('roles_show', {'slug': 'cocina'}) }}" class="badge badge-light">
             <div class="card" style="width: 256px;">
-                <img class="card-img-top" src="{{ asset('images/cocina.svg') }}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Cocina</h5>
                 </div>
@@ -16,7 +16,6 @@
         </a>
         <a href="{{ path('roles_show', {'slug': 'camarero'}) }}" class="badge badge-light">
             <div class="card" style="width: 256px;">
-                <img class="card-img-top" src="{{ asset('images/camarero.svg') }}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Camarero</h5>
                 </div>
@@ -24,7 +23,6 @@
         </a>
         <a href="{{ path('roles_show', {'slug': 'barra'}) }}" class="badge badge-light">
             <div class="card" style="width: 256px;">
-                <img class="card-img-top" src="{{ asset('images/barra.svg') }}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Barra</h5>
                 </div>
@@ -32,7 +30,6 @@
         </a>
         <a href="{{ path('roles_show', {'slug': 'admin'}) }}" class="badge badge-light">
             <div class="card" style="width: 256px;">
-                <img class="card-img-top" src="{{ asset('images/admin.svg') }}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Administraci&oacute;n</h5>
                 </div>
