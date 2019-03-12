@@ -90,7 +90,7 @@ class RestaurantController extends AbstractController
                 break;
 
             case 'admin':
-                return $this->render('roles/admin.html.twig');
+                return $this->render('roles/admin/admin.html.twig');
                 break;
 
             default:
@@ -135,6 +135,23 @@ class RestaurantController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/roles/pedidos/new-pedido-articulo", name="app_new_pedido_articulo")
+     */
+
+    public function addPedidoArticulo()
+    {
+        return $this->render('roles/pedidos/new-pedido-articulo.html.twig');
+    }
+
+    /**
+     * @Route("/roles/admin/admin-dashboard", name="app_admin")
+     */
+
+    public function appAdmin()
+    {
+        return $this->render('roles/admin/admin-dashboard.html.twig');
+    }
 
 
     /**
