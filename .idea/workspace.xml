@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d7e2fd3-9978-421c-9764-5111f9202e67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/roles/pedidos/new-pedido-articulo.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RestaurantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RestaurantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/roles/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/roles/admin/admin.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/roles/pedidos/new-pedido-mesa.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/roles/pedidos/new-pedido-mesa.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="4d7e2fd3-9978-421c-9764-5111f9202e67" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,12 +371,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551885185031</updated>
       <workItem from="1551885190349" duration="408000" />
-      <workItem from="1551885689423" duration="65034000" />
+      <workItem from="1551885689423" duration="65407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65442000" />
+    <option name="totallyTimeSpent" value="65815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1537" height="912" extended-state="6" />
