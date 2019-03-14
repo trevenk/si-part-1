@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4d7e2fd3-9978-421c-9764-5111f9202e67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="538">
@@ -37,6 +38,15 @@
                 <element signature="e#2363#2371#0#HTML" expanded="true" />
                 <element signature="e#2498#2506#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -124,6 +134,7 @@
         <option value="$PROJECT_DIR$/src/Controller/RestaurantController.php" />
         <option value="$PROJECT_DIR$/templates/roles/admin/admin.html.twig" />
         <option value="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -374,12 +385,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551885185031</updated>
       <workItem from="1551885190349" duration="408000" />
-      <workItem from="1551885689423" duration="70618000" />
+      <workItem from="1551885689423" duration="72502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71026000" />
+    <option name="totallyTimeSpent" value="72910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1537" height="912" extended-state="6" />
@@ -603,6 +614,13 @@
             <element signature="e#2363#2371#0#HTML" expanded="true" />
             <element signature="e#2498#2506#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
