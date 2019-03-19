@@ -9,6 +9,7 @@
 namespace App\Controller;
 
 
+use App\Entity\Area;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -108,28 +109,12 @@ class RestaurantController extends AbstractController
 
     public function nuevoPedido()
     {
-        $areas = [
-            [
-                "nombre" => 'rio',
-                "mesas" => 5,
-            ],
-            [
-                "nombre" => 'terraza',
-                "mesas" => 10,
-            ],
-            [
-                "nombre" => 'piscina',
-                "mesas" => 10,
-            ],
-            [
-                "nombre" => 'comedor',
-                "mesas" => 20,
-            ],
-            [
-                "nombre" => 'barra',
-                "mesas" => 10,
-            ],
-        ];
+        // traer el repositorio de la clase Area
+        $repository = $this->getDoctrine()->getRepository(Area::class);
+
+        // leer todos los objetos Area en la base de datos
+        $areas = $repository->findAll();
+
         return $this->render('roles/pedidos/new-pedido-mesa.html.twig',[
             'areas' => $areas,
         ]);
