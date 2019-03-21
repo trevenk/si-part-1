@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7e2fd3-9978-421c-9764-5111f9202e67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RestaurantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RestaurantController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AreaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="66" column="93" selection-start-line="66" selection-start-column="93" selection-end-line="66" selection-end-column="93" />
+            <state relative-caret-position="276">
+              <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+              <folding>
+                <element signature="e#418#426#0#HTML" expanded="true" />
+                <element signature="e#1467#1473#0#HTML" expanded="true" />
+                <element signature="e#1624#1632#0#HTML" expanded="true" />
+                <element signature="e#1833#1841#0#HTML" expanded="true" />
+                <element signature="e#1967#1973#0#HTML" expanded="true" />
+                <element signature="e#2352#2358#0#HTML" expanded="true" />
+                <element signature="e#2729#2735#0#HTML" expanded="true" />
+                <element signature="e#3103#3109#0#HTML" expanded="true" />
+                <element signature="e#3462#3470#0#HTML" expanded="true" />
+                <element signature="e#5526#5534#0#HTML" expanded="true" />
+                <element signature="e#4862#4870#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/AreaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="215">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="e#34#80#0#PHP" expanded="true" />
               </folding>
@@ -57,11 +70,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/area/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,15 +112,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/roles/admin/area/area-basic.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -112,11 +127,16 @@
       <find>the sp</find>
       <find>{{ area['nombre'] }}</find>
       <find>dia/{{ i }}</find>
+      <find>mes</find>
+      <find>Barra</find>
     </findStrings>
     <replaceStrings>
       <replace>semana</replace>
       <replace>mes</replace>
       <replace>dia</replace>
+      <replace>cocina</replace>
+      <replace>Barra</replace>
+      <replace>barra</replace>
     </replaceStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -146,16 +166,16 @@
         <option value="$PROJECT_DIR$/templates/roles/camarero.html.twig" />
         <option value="$PROJECT_DIR$/templates/roles/pedidos/new-pedido-articulo.html.twig" />
         <option value="$PROJECT_DIR$/templates/roles/admin/admin.html.twig" />
-        <option value="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/templates/roles/admin/area/area-basic.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/Controller/AreaController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Area.php" />
         <option value="$PROJECT_DIR$/templates/roles/pedidos/new-pedido-mesa.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/RestaurantController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AreaController.php" />
+        <option value="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" />
       </list>
     </option>
   </component>
@@ -357,17 +377,6 @@
             <path>
               <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,6 +401,13 @@
               <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
@@ -459,12 +475,12 @@
       <workItem from="1551885689423" duration="72502000" />
       <workItem from="1552572645954" duration="3644000" />
       <workItem from="1552981394823" duration="19811000" />
-      <workItem from="1553163484037" duration="8143000" />
+      <workItem from="1553163484037" duration="12523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104508000" />
+    <option name="totallyTimeSpent" value="108888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,13 +663,6 @@
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190321110124.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="66" column="93" selection-start-line="66" selection-start-column="93" selection-end-line="66" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/roles/camarero.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45">
@@ -685,16 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AreaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="e#34#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RestaurantController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -714,6 +713,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/area/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AreaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#34#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
+          <folding>
+            <element signature="e#418#426#0#HTML" expanded="true" />
+            <element signature="e#1467#1473#0#HTML" expanded="true" />
+            <element signature="e#1624#1632#0#HTML" expanded="true" />
+            <element signature="e#1833#1841#0#HTML" expanded="true" />
+            <element signature="e#1967#1973#0#HTML" expanded="true" />
+            <element signature="e#2352#2358#0#HTML" expanded="true" />
+            <element signature="e#2729#2735#0#HTML" expanded="true" />
+            <element signature="e#3103#3109#0#HTML" expanded="true" />
+            <element signature="e#3462#3470#0#HTML" expanded="true" />
+            <element signature="e#5526#5534#0#HTML" expanded="true" />
+            <element signature="e#4862#4870#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

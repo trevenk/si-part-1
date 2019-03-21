@@ -7,76 +7,134 @@
         <section class="mt-5">
             <nav class="mt-5">
                 <div class="nav nav-tabs justify-content-center mt-5" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-dia-tab" data-toggle="tab" href="#nav-dia" role="tab" aria-controls="nav-dia">dia</a>
-                    <a class="nav-item nav-link" id="nav-semana-tab" data-toggle="tab" href="#nav-semana" role="tab" aria-controls="nav-semana">semana</a>
-                    <a class="nav-item nav-link" id="nav-mes-tab" data-toggle="tab" href="#nav-mes" role="tab" aria-controls="nav-mes">mes</a>
+                    <a class="nav-item nav-link active" id="nav-dia-tab" data-toggle="tab" href="#nav-dia" role="tab" aria-controls="nav-dia">D&iacute;a</a>
+                    <a class="nav-item nav-link" id="nav-cocina-tab" data-toggle="tab" href="#nav-cocina" role="tab" aria-controls="nav-cocina">Info Cocina</a>
+                    <a class="nav-item nav-link" id="nav-barra-tab" data-toggle="tab" href="#nav-barra" role="tab" aria-controls="nav-barra">Info Barra</a>
+                    <a class="nav-item nav-link" id="nav-restaurante-tab" data-toggle="tab" href="#nav-restaurante" role="tab" aria-controls="nav-restaurante">Info Restaurante</a>
+                    <a class="nav-item nav-link" id="nav-personal-tab" data-toggle="tab" href="#nav-personal" role="tab" aria-controls="nav-personal">Info Personal</a>
                 </div>
             </nav>
             <div class="tab-content mt-5" id="nav-tabContent">
-                 <div class="tab-pane fade show active" id="nav-dia" role="tabpanel" aria-labelledby="nav-dia-tab">
-                     <section class="shadow-lg jumbotron">
-                         <div class="row">
-                             <div class="shadow-lg bg-light col">
-                                 <h2>Pedidos por &aacute;rea</h2>
-                                 <br>
-                                 <table class="table table-sm">
-                                     <thead>
-                                     <tr>
-                                         <th scope="col">&Aacute;rea</th>
-                                         <th scope="col">Pedidos</th>
-                                         <th scope="col" class="text-right">Facturado</th>
-                                     </tr>
-                                     </thead>
-                                     <tbody>
-                                     <tr>
-                                         <td>R&iacute;o</td>
-                                         <td>24</td>
-                                         <td class="text-right">120.05 &euro;</td>
-                                     </tr>
-                                     <tr>
-                                         <td>Terraza</td>
-                                         <td>40</td>
-                                         <td class="text-right">786.00 &euro;</td>
-                                     </tr>
-                                     <tr>
-                                         <td>Piscina</td>
-                                         <td>85</td>
-                                         <td class="text-right">1237.90 &euro;</td>
-                                     </tr>
-                                     <tr>
-                                         <td>Comedor</td>
-                                         <td>8</td>
-                                         <td class="text-right">37.50 &euro;</td>
-                                     </tr>
-                                     </tbody>
-                                 </table>
-                             </div>
-                             <div class="px-5 py-5 col">
-                                 <a href="" class="my-2 btn btn-info btn-lg btn-block shadow-lg">Resumen de ventas del d&iacute;a</a>
-                                 <br>
-                                 <a href="" class="my-2 btn btn-success btn-lg btn-block shadow-lg">Cerrar d&iacute;a</a>
-                             </div>
-                         </div>
-                     </section>
-                 </div>
-                <div class="tab-pane fade show" id="nav-semana" role="tabpanel" aria-labelledby="nav-semana-tab">
+                <div class="tab-pane fade show active" id="nav-dia" role="tabpanel" aria-labelledby="nav-dia-tab">
+                    <section>
+                        <div class="bg-success text-light">
+                            <h1 class="">Ventas totales</h1>
+                            <h2><b>2356,70 &euro;</b></h2>
+                        </div>
+                        <article>
+                            <div class="mt-5">
+                                <h2>Ventas por &Aacute;rea</h2>
+                                <div class="card-group mt-4 jumbotron shadow-lg">
+                                    <div class="card mx-2">
+                                        <div class="card-title mt-4"><h3>R&iacute;o</h3></div>
+                                        <div class="card-body">
+                                            <p>655,12 &euro;</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-2">
+                                        <div class="card-title mt-4"><h3>Piscina</h3></div>
+                                        <div class="card-body">
+                                            <p>755,12 &euro;</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-2">
+                                        <div class="card-title mt-4"><h3>Terraza</h3></div>
+                                        <div class="card-body">
+                                            <p>1155,12 &euro;</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-2">
+                                        <div class="card-title mt-4"><h3>Barra</h3></div>
+                                        <div class="card-body">
+                                            <p>255,12 &euro;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <a href="#" class="btn btn-success btn-lg btn-block">Cerrar d&iacute;a</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div class="tab-pane fade show" id="nav-cocina" role="tabpanel" aria-labelledby="nav-cocina-tab">
                      <div class="card mt-2 shadow-lg">
-                         <div class="card-body">
-                             <h5 class="card-title">semana</h5>
-                             <h6 class="card-subtitle mb-2 text-muted">Estado: Vac&iacute;a</h6>
-                             <a href="" class="ml-3 btn btn-primary">A&ntilde;adir pedido</a>
-                         </div>
+
                      </div>
-                 </div>
-                <div class="tab-pane fade show" id="nav-mes" role="tabpanel" aria-labelledby="nav-mes-tab">
+                </div>
+                <div class="tab-pane fade show" id="nav-barra" role="tabpanel" aria-labelledby="nav-barra-tab">
                      <div class="card mt-2 shadow-lg">
-                         <div class="card-body">
-                             <h5 class="card-title">mes</h5>
-                             <h6 class="card-subtitle mb-2 text-muted">Estado: Vac&iacute;a</h6>
-                             <a href="" class="ml-3 btn btn-primary">A&ntilde;adir pedido</a>
-                         </div>
+
                      </div>
-                 </div>
+                </div>
+                <div class="tab-pane fade show" id="nav-restaurante" role="tabpanel" aria-labelledby="nav-restaurante-tab">
+                     <div class="card mt-2 shadow-lg">
+
+                     </div>
+                </div>
+                <div class="tab-pane fade show" id="nav-personal" role="tabpanel" aria-labelledby="nav-personal-tab">
+                    <section>
+                        <article>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Registrar nuevo usuario
+                                </button>
+                                <div class="dropdown-menu">
+                                    <form class="px-4 py-3">
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail1">Nombre de usuario</label>
+                                            <input type="text" class="form-control" id="exampleDropdownFormUser" placeholder="Nombre de usuario">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormPassword1">Contrase&ntilde;a</label>
+                                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contrase&ntilde;a">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Registrar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                     <article>
+                         <div class="jumbotron shadow">
+                             <h1>Trabajando hoy</h1>
+                             <table class="table table-striped">
+                                 <thead>
+                                 <tr>
+                                     <th scope="col">#</th>
+                                     <th scope="col">Usuario</th>
+                                     <th scope="col">&Aacute;rea</th>
+                                 </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                     <th scope="row">1</th>
+                                     <td>Jose</td>
+                                     <td>Terraza</td>
+                                 </tr>
+                                 <tr>
+                                     <th scope="row">3</th>
+                                     <td>Mariano</td>
+                                     <td>Terraza</td>
+                                 </tr>
+                                 <tr>
+                                     <th scope="row">4</th>
+                                     <td>Jorge</td>
+                                     <td>Cocina</td>
+                                 </tr>
+                                 <tr>
+                                     <th scope="row">5</th>
+                                     <td>Erisbel</td>
+                                     <td>Cocina</td>
+                                 </tr>
+
+                                 </tbody>
+                             </table>
+                         </div>
+                     </article>
+                </div>
 
             </div>
         </section>
