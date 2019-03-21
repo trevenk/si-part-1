@@ -118,6 +118,7 @@ class RestaurantController extends AbstractController
         return $this->render('roles/pedidos/new-pedido-mesa.html.twig',[
             'areas' => $areas,
         ]);
+
     }
 
     /**
