@@ -1,29 +1,27 @@
 <?php
-// src/Controller/AreaController.php
+
 namespace App\Controller;
 
-// ...
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Area;
 
 class AreaController extends AbstractController
 {
-
     /**
-     * @Route("/roles/admin/area", name="new_area")
+     * @Route("/roles/admin/area", name="new-area")
      */
     public function newArea()
     {
-
         // traer el entity manager
         $entityManager = $this->getDoctrine()->getManager();
 
         // construir e inicializar un area
         $area = new Area();
-        $area->setNombre('rio');
-        $area->setMesas(5);
+        $area->setNombre('terraza');
+        $area->setMesas(10);
+        $area->setDescripcion('Gran terraza con bellas vistas de Granada.');
 
         // avisar a Doctrine que quiero CREAR esta Area
         $entityManager->persist($area);
@@ -32,5 +30,6 @@ class AreaController extends AbstractController
         $entityManager->flush();
 
         return new Response('Saved new area with id '.$area->getId());
+
     }
 }

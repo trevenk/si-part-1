@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: trevenk
- * Date: 19/03/19
- * Time: 9:34
- */
 
 namespace App\Entity;
 
@@ -16,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
 class Area
 {
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
     private $id;
@@ -32,34 +26,49 @@ class Area
      */
     private $mesas;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $descripcion;
 
-    //getters
-    public function getId()
+    public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNombre()
+    public function getNombre(): ?string
     {
         return $this->nombre;
     }
 
-    public function getMesas()
+    public function setNombre(string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getMesas(): ?int
     {
         return $this->mesas;
     }
 
-    //and setters
-    public function setNombre($nombre)
-    {
-        $this->nombre = $nombre;
-    }
-
-    public function setMesas($mesas)
+    public function setMesas(int $mesas): self
     {
         $this->mesas = $mesas;
+
+        return $this;
     }
 
+    public function getDescripcion(): ?string
+    {
+        return $this->descripcion;
+    }
 
+    public function setDescripcion(?string $descripcion): self
+    {
+        $this->descripcion = $descripcion;
 
+        return $this;
+    }
 }
