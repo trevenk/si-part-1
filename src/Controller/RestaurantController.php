@@ -24,8 +24,6 @@ class RestaurantController extends AbstractController
         return $this->render('roles/homepage.html.twig');
     }
 
-
-
     /**
      * @Route("/roles/roles", name="app_roles_show")
      */
