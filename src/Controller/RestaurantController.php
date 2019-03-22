@@ -89,7 +89,8 @@ class RestaurantController extends AbstractController
                 break;
 
             case 'admin':
-                return $this->render('roles/admin/admin.html.twig');
+
+                return $this->render('roles/admin/admin-dashboard.html.twig');
                 break;
 
             default:

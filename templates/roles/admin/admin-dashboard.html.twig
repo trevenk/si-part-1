@@ -4,6 +4,9 @@
 
     <body class="mt-5">
     <div class="container text-center">
+        {% if is_granted('ROLE_ADMIN') %}
+
+
         <section class="mt-5">
             <nav class="mt-5">
                 <div class="nav nav-tabs justify-content-center mt-5" id="nav-tab" role="tablist">
@@ -138,6 +141,7 @@
 
             </div>
         </section>
+        {% endif %}
     </div>
     </body>
 

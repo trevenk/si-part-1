@@ -2,20 +2,37 @@
 
 {% block body %}
     <div class="container">
-        <h1 class="text-center">Bienvenido</h1>
-        <ul class="nav justify-content-end">
-            <li><a href="{{ path('app_roles_show') }}">Log In</a> </li>
-            <li>&nbsp;|&nbsp;</li>
-            <li><a href="#">Sign Up</a> </li>
-        </ul>
-        <form method="post">
-            <label>Usuario</label>
-            <input type="text" name="usuario" class="form-control" id="usuario">
-            <label>Contrase&ntilde;a</label>
-            <input type="password" name="pass" class="form-control" id="pass">
-            <br>
-            <input type="submit" class="form-control">
-        </form>
+        <nav class="justify-content-between navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+            <a class="navbar-brand" href="{{ path('app_homepage') }}">Honger</a>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="">
+                        <a class="px-4 btn btn-outline-success" href="{{ path('app_login') }}">Log In</a>
+                    </li>
+                    <li class="">
+                        &nbsp;
+                    </li>
+
+                    <li class="">
+                        <a class="px-4 btn btn-outline-success" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </span>
+        </nav>
+
+        <h2 class="mt-5 justify-content-center text-justify">Bienvenido a Honger <i>la plataforma de gesti&oacute;n de restaurantes</i> con mayor flexibilidad del mercado.</h2>
+
+        <p class="mt-5 justify-content-center text-justify">Honger se encuentra en una versi&oacute;n beta de su desarrollo, sin embargo, de ya mismo, en esta plataforma puede realizar
+        un conjunto de actividades que le permitir&aacute;n facilitar la manera en que se desarrollan los servicios que ofrece en su
+        Restaurante.</p>
+        <ol>
+            <li>Gestiones capacidades de su restaurante.</li>
+            <li>Recoja los pedidos desde un terminal cualquiera</li>
+            <li>Reciba las comandas en un terminal cualquiera</li>
+            <li>Notifique pedidos terminados al responsable desde cualquier lugar del establecimiento</li>
+            <li>Reciba las &oacute;rdenes en cocina directamente de los clientes de su restaurante</li>
+        </ol>
+
 
     </div>
 {% endblock %}
