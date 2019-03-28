@@ -38,16 +38,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+            <state relative-caret-position="270">
+              <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
               <folding>
                 <element signature="e#1554#1560#0#HTML" expanded="true" />
                 <element signature="e#1729#1737#0#HTML" expanded="true" />
                 <element signature="e#2101#2107#0#HTML" expanded="true" />
-                <element signature="e#5088#5100#0#Twig" expanded="true" />
+                <element signature="e#4721#4733#0#Twig" expanded="true" />
                 <element signature="e#8292#8306#0#Twig" expanded="true" />
               </folding>
             </state>
@@ -78,13 +78,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/registration/register.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#445#453#0#HTML" expanded="true" />
+                <element signature="e#482#496#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Form/RegistrationFormType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="e#28#48#0#PHP" expanded="true" />
               </folding>
@@ -105,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/RegistrationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180" />
+            <state relative-caret-position="-135" />
           </provider>
         </entry>
       </file>
@@ -173,6 +175,8 @@
         <option value="$PROJECT_DIR$/src/Repository/AlergenosRepository.php" />
         <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/RegistrationFormType.php" />
+        <option value="$PROJECT_DIR$/templates/registration/register.html.twig" />
       </list>
     </option>
   </component>
@@ -287,10 +291,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="833" />
+    <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="767" />
-    <option name="height" value="875" />
+    <option name="width" value="757" />
+    <option name="height" value="654" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -315,68 +319,7 @@
             <path>
               <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="roles" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="si-part-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="si-part-1" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -457,15 +400,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/roles/admin/area" />
-      <recent name="$PROJECT_DIR$/templates/roles/pedidos" />
-      <recent name="$PROJECT_DIR$/templates/roles/admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/roles" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/roles/admin/area" />
+      <recent name="$PROJECT_DIR$/templates/roles/pedidos" />
+      <recent name="$PROJECT_DIR$/templates/roles/admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -507,12 +450,12 @@
       <workItem from="1553163484037" duration="22623000" />
       <workItem from="1553253406987" duration="8758000" />
       <workItem from="1553766218145" duration="3339000" />
-      <workItem from="1553769602642" duration="13532000" />
+      <workItem from="1553769602642" duration="15128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144617000" />
+    <option name="totallyTimeSpent" value="146213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,16 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/RestaurantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1693">
-          <caret line="137" column="70" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="70" />
-          <folding>
-            <element signature="e#116#136#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -846,15 +779,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+          <folding>
+            <element signature="e#1554#1560#0#HTML" expanded="true" />
+            <element signature="e#1729#1737#0#HTML" expanded="true" />
+            <element signature="e#2101#2107#0#HTML" expanded="true" />
+            <element signature="e#4721#4733#0#Twig" expanded="true" />
+            <element signature="e#8292#8306#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RestaurantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1693">
+          <caret line="137" column="70" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="70" />
+          <folding>
+            <element signature="e#116#136#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
+        <state relative-caret-position="-135" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/RegistrationFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="e#28#48#0#PHP" expanded="true" />
           </folding>
@@ -863,24 +820,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/roles/admin/admin-dashboard.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-          <folding>
-            <element signature="e#1554#1560#0#HTML" expanded="true" />
-            <element signature="e#1729#1737#0#HTML" expanded="true" />
-            <element signature="e#2101#2107#0#HTML" expanded="true" />
-            <element signature="e#5088#5100#0#Twig" expanded="true" />
-            <element signature="e#8292#8306#0#Twig" expanded="true" />
+            <element signature="e#445#453#0#HTML" expanded="true" />
+            <element signature="e#482#496#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>

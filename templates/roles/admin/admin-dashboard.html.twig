@@ -78,18 +78,12 @@
                      </div>
                 </div>
                 <div class="tab-pane fade show" id="nav-personal" role="tabpanel" aria-labelledby="nav-personal-tab">
-                    <section>
-                        <article>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Registrar nuevo usuario
-                                </button>
-                                <div class="dropdown-menu">
-                                    <section>
-                                        <iframe src="{{ path('app_register') }}" width="450px" height="250px"></iframe>
-                                    </section>
-                                </div>
-                            </div>
+                    <section class="row">
+                        <article class="col">
+                            <h3>Gestionar personal del establecimiento</h3>
+                            <a href="{{ path('app_register') }}" class="btn btn-secondary btn-block">
+                                Registrar nuevo usuario
+                            </a>
                         </article>
                     </section>
                      <article>

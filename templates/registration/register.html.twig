@@ -3,12 +3,21 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
+    
+    <div class="mt-5 jumbotron shadow container justify-content-center text-center">
+    {% if is_granted('ROLE_ADMIN') %}
+    <h1>Registrar nuevo usuario</h1>
 
     {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.username) }}
         {{ form_row(registrationForm.plainPassword) }}
 
-        <button class="btn">Register</button>
+        <button class="btn btn-block btn-success">Register</button>
     {{ form_end(registrationForm) }}
+
+    {% else %}
+    <h2>No tiene acceso a esta parte de la aplicaci&oacute;n</h2>
+    <a href="{{ path('app_roles_show') }}" class="btn btn-block btn-success">Regresar</a>
+    {% endif %}
+    </div>
 {% endblock %}
