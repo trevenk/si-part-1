@@ -20,10 +20,10 @@ class UserFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $user = new User();
-        $user->setUsername('Bryan');
-        $user->setRoles(['ROLE_USER',]);
+        $user->setUsername('Admin');
+        $user->setRoles(['ROLE_ADMIN',]);
         $user->setPassword($this->passwordEncoder->encodePassword(
-            $user, 'pass1'
+            $user, 'admin'
         ));
         $manager->persist($user);
 

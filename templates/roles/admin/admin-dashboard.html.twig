@@ -141,6 +141,9 @@
 
             </div>
         </section>
+        {% else %}
+            <h2>No est&aacute; autorizado a acceder a esta pantalla de la aplicaci&oacute;n</h2>
+            <a href="{{ path('app_roles_show') }}" class="btn btn-block btn-success">Regresar</a>
         {% endif %}
     </div>
     </body>

@@ -19,7 +19,7 @@ class AreaController extends AbstractController
 
         // construir e inicializar un area
         $area = new Area();
-        $area->setNombre('piscina');
+        $area->setNombre('barra');
         $area->setMesas(10);
         $area->setDescripcion('Gran terraza con bellas vistas de Granada.');
 
