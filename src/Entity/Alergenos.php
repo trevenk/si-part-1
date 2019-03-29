@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -25,6 +27,16 @@ class Alergenos
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $icon;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Ingrediente", mappedBy="alergeno")
+     */
+    private $ingredientes;
+
+    public function __construct()
+    {
+        $this->ingredientes = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -51,6 +63,37 @@ class Alergenos
     public function setIcon(?string $icon): self
     {
         $this->icon = $icon;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Ingrediente[]
+     */
+    public function getIngredientes(): Collection
+    {
+        return $this->ingredientes;
+    }
+
+    public function addIngrediente(Ingrediente $ingrediente): self
+    {
+        if (!$this->ingredientes->contains($ingrediente)) {
+            $this->ingredientes[] = $ingrediente;
+            $ingrediente->setAlergeno($this);
+        }
+
+        return $this;
+    }
+
+    public function removeIngrediente(Ingrediente $ingrediente): self
+    {
+        if ($this->ingredientes->contains($ingrediente)) {
+            $this->ingredientes->removeElement($ingrediente);
+            // set the owning side to null (unless already changed)
+            if ($ingrediente->getAlergeno() === $this) {
+                $ingrediente->setAlergeno(null);
+            }
+        }
 
         return $this;
     }

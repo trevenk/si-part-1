@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\IngredienteRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\MesaRepository")
  */
-class Ingrediente
+class Mesa
 {
     /**
      * @ORM\Id()
@@ -22,14 +22,14 @@ class Ingrediente
     private $nombre;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
-    private $descripcion;
+    private $capacidad;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Alergenos", inversedBy="ingredientes")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Area", inversedBy="relmesas")
      */
-    private $alergeno;
+    private $area;
 
     public function getId(): ?int
     {
@@ -48,28 +48,27 @@ class Ingrediente
         return $this;
     }
 
-    public function getDescripcion(): ?string
+    public function getCapacidad(): ?int
     {
-        return $this->descripcion;
+        return $this->capacidad;
     }
 
-    public function setDescripcion(?string $descripcion): self
+    public function setCapacidad(?int $capacidad): self
     {
-        $this->descripcion = $descripcion;
+        $this->capacidad = $capacidad;
 
         return $this;
     }
 
-    public function getAlergeno(): ?Alergenos
+    public function getArea(): ?Area
     {
-        return $this->alergeno;
+        return $this->area;
     }
 
-    public function setAlergeno(?Alergenos $alergeno): self
+    public function setArea(?Area $area): self
     {
-        $this->alergeno = $alergeno;
+        $this->area = $area;
 
         return $this;
     }
-
 }

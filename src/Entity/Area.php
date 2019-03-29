@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -30,6 +32,16 @@ class Area
      * @ORM\Column(type="text", nullable=true)
      */
     private $descripcion;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Mesa", mappedBy="area")
+     */
+    private $relmesas;
+
+    public function __construct()
+    {
+        $this->relmesas = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -68,6 +80,37 @@ class Area
     public function setDescripcion(?string $descripcion): self
     {
         $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Mesa[]
+     */
+    public function getRelmesas(): Collection
+    {
+        return $this->relmesas;
+    }
+
+    public function addRelmesa(Mesa $relmesa): self
+    {
+        if (!$this->relmesas->contains($relmesa)) {
+            $this->relmesas[] = $relmesa;
+            $relmesa->setArea($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRelmesa(Mesa $relmesa): self
+    {
+        if ($this->relmesas->contains($relmesa)) {
+            $this->relmesas->removeElement($relmesa);
+            // set the owning side to null (unless already changed)
+            if ($relmesa->getArea() === $this) {
+                $relmesa->setArea(null);
+            }
+        }
 
         return $this;
     }
